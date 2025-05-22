@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+    body {
+        background-color: #f8f7ed;
+        font-family: sans-serif;
+    }
+    .logo-wrapper {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        background-color: rgb(24, 24, 24);
+        padding: 10px 5rem;
+    }
+    .logo-img {
+        width: 50px;
+        height: 50px;
+        border-right: 3px solid #ffcc00;
+    }
+    .logo-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-fit: contain;
+    }
+    .logo-text {
+        font-size: 32px;
+        font-weight: 600;
+        color: #fff;
+    }
+    .logo-text span {
+        color: #ffcc00;
+    }
+
+    nav {
+        display: flex;
+        justify-content: start;
+        gap: 1rem;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        margin-top: 3px;
+        padding: .5rem 5rem;
+    }
+
+    nav li {
+        list-style: none;
+        font-size: 24px;
+        font-weight: 500;
+    }
+    
+    nav li a {
+        text-decoration: none;
+        color: #292929;
+        transition: .3s;
+    }
+
+    nav li a:hover {
+        text-decoration: underline;
+        color: #ffcc00;
+    }
+
+    .contoh {
+        min-height: 2000px;
+    }x
+
+    #id {
+        position: absolute;
+        bottom: 0;
+    }
+
+    main {
+        padding: 0 5rem;
+    }
+    main h3 {
+        text-align: center;
+        font-size: 23px;
+        margin: 10px 0;
+    }
+</style>
+<body id="home">
+    <header class="logo-wrapper">
+        <div class="logo-img">
+            <img src="images/logoPNG.png" alt="">
+        </div>
+        <div class="logo-text">Pham<span>.Id</span></div>
+    </header>
+
+    <nav>
+        <li><a href="#home">Home</a></li>
+        <li><a href="quiz5.html">Buku</a></li>
+        <li><a href="quiz6.html">Majalah</a></li>
+        <li><a href="quiz7.html">Koran</a></li>
+    </nav>
+
+    <main>
+        <h3>Daftar buku best seller ...</h3>
+        <table cellspacing="10" cellpadding="13px" width="100%" border="1px solid #000">
+            <tr>
+                <th><img src="images/buku1.jpeg" width="200"></th>
+                <th><img src="images/buku2.jpeg" width="200"></th>
+                <th><img src="images/buku3.jpeg" width="200"></th>
+                <th><img src="images/buku4.jpeg" width="200"></th>
+                
+            </tr>
+            <tr>
+                <th><img src="images/buku5.jpeg" width="200"></th>
+                <th><img src="images/buku6.jpeg" width="200"></th>
+                <th><img src="images/buku7.jpeg" width="200"></th>
+                <th><img src="images/buku8.jpeg" width="200"></th>
+            </tr>
+        </table>
+        <br>
+        <h3>Majalah dan koran ...</h3>
+        <table cellspacing="0" cellpadding="13px" width="100%" border="1px solid #000">
+            <tr>
+                <th><img src="images/buku1.jpeg" width="200"></th>
+                <th><img src="images/buku2.jpeg" width="200"></th>
+                <th><img src="images/buku3.jpeg" width="200"></th>
+                <th><img src="images/buku4.jpeg" width="200"></th>
+                
+            </tr>
+            <tr>
+                <th><img src="images/buku5.jpeg" width="200"></th>
+                <th><img src="images/buku6.jpeg" width="200"></th>
+                <th><img src="images/buku7.jpeg" width="200"></th>
+                <th><img src="images/buku8.jpeg" width="200"></th>
+            </tr>
+        </table>
+    </main>
+</body>
+</html>

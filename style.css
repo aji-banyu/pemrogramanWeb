@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+
+html {
+}
+
+span:nth-child(1) {
+    color: red;
+    font-family: "Special Gothic Expanded One";
+}
+span:nth-child(1) {
+    color: red;
+}
+span:nth-child(1) {
+    color: red;
+}
+span:nth-child(1) {
+    color: blue;
+}
+
+
+span:nth-child(1) {
+    color: red;
+}
+span:nth-child(1) {
+    color: red;
+}
+span:nth-child(1) {
+    color: yellow;
+}

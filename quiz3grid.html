@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 3</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+        color: #fff;
+        text-decoration: none;
+        color: #fff;
+    }
+    a {
+        cursor: pointer;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+        transition: .3s;
+    }
+    nav ul li a:hover {
+        color: #ffcc00;
+    }
+    
+    img {width: 100%; height: 100%; object-fit: cover;}
+    input::placeholder {color: #fff;}
+
+    .item {
+        transition: .3s ease;
+    }
+    .item:hover {
+        transform: scale(1.05);
+    }
+    .item h3 {
+        transition: .3s;
+    }
+    .item:hover h3 {
+        color: #ffcc00;
+    }
+    
+</style>
+<body>
+    <header style="background-color: #232323; width: 100%; box-shadow: 0 8px 8px rgba(0,0,0,.3);" >
+        <div class="top" style="display: flex; justify-content: space-between; align-items: center; padding: 10px 9rem; border-bottom: .5px solid #555;" >
+            <div class="logo" style="display: flex; justify-content: space-between; align-items: center; gap: 10px; cursor: pointer;">
+                <div class="logo-img" style="width: 40px; height: 40px; padding-right: 4px; border-right: 3px solid #ffcc00;">
+                    <img src="images/logoPNG.png" style="width: 100%; height: 100%; object-fit: contain;">
+                </div>
+                <div class="logo-text">
+                    <h4 style="font-family: sans-serif; font-size: 26px; color: #fff;">Pham<span style="color: #ffcc00;">.Id</span></h4>
+                </div>
+            </div>
+
+            <div class="search-box" style="width: 500px; height: 30px;">
+                <input type="search" placeholder="Cari Buku atau Majalah" style="width: 100%; height: 100%; padding: 0 10px; border: none; border-radius: 8px; background-color: #52595e; font-size: 14px; color: #fff;">
+            </div>
+        </div>
+
+        <nav style="display: flex; justify-content: space-between; align-items: center; padding: 10px 9rem; border-bottom: .5px solid #555;">
+            <ul style="display: flex; justify-content: space-between; align-items: center; gap: 12px; list-style: none;">
+                <li><a href="">Home</a></li>
+                <li><a href="">Buku</a></li>
+                <li><a href="">Majalah</a></li>
+                <li><a href="">Koran</a></li>
+            </ul>
+
+            <ul style="display: flex; justify-content: space-between; align-items: center; gap: 12px; list-style: none;">
+                <li><a href="" style="width: max-content; background-color: #52595e; border-radius: 6px; padding: 6px;">Masuk</a></li>
+                <li><a href="" style="width: max-content; background-color: #ffcc00; color: #000; border-radius: 6px; padding: 6px;">Daftar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Best Seller Start -->
+    <section style="padding: 10px 9rem; background-color: #353535;">
+        <h1 style="font-size: 28px; margin: 14px 0;">Best Seller</h1>
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 14px; flex-wrap: wrap;">
+            <div class="item" style="height: 330px; padding: 6px; background-color: #545454; box-shadow: 4px 4px 8px rgba(0,0,0,.8);">
+                <div style="width: 100%; height: 80%; background-color: yellow;">
+                    <img src="images/buku1.jpeg">
+                </div>
+                <div style="padding: 10px; display: flex; flex-direction: column; gap: 6px;">
+                    <h3>Judul Buku</h3>
+                    <p>Rp.80.000</p>
+                </div>
+            </div>
+            <div class="item" style="height: 330px; padding: 6px; background-color: #545454; box-shadow: 4px 4px 8px rgba(0,0,0,.8);">
+                <div style="width: 100%; height: 80%; background-color: yellow;">
+                    <img src="images/buku2.jpeg">
+                </div>
+                <div style="padding: 10px; display: flex; flex-direction: column; gap: 6px;">
+                    <h3>Judul Buku</h3>
+                    <p>Rp.80.000</p>
+                </div>
+            </div>
+            <div class="item" style="height: 330px; padding: 6px; background-color: #545454; box-shadow: 4px 4px 8px rgba(0,0,0,.8);">
+                <div style="width: 100%; height: 80%; background-color: yellow;">
+                    <img src="images/buku3.jpeg">
+                </div>
+                <div style="padding: 10px; display: flex; flex-direction: column; gap: 6px;">
+                    <h3>Judul Buku</h3>
+                    <p>Rp.80.000</p>
+                </div>
+            </div>
+            <div class="item" style="height: 330px; padding: 6px; background-color: #545454; box-shadow: 4px 4px 8px rgba(0,0,0,.8);">
+                <div style="width: 100%; height: 80%; background-color: yellow;">
+                    <img src="images/buku4.jpeg">
+                </div>
+                <div style="padding: 10px; display: flex; flex-direction: column; gap: 6px;">
+                    <h3>Judul Buku</h3>
+                    <p>Rp.80.000</p>
+                </div>
+            </div>
+            <div class="item" style="height: 330px; padding: 6px; background-color: #545454; box-shadow: 4px 4px 8px rgba(0,0,0,.8);">
+                <div style="width: 100%; height: 80%; background-color: yellow;">
+                    <img src="images/buku5.jpeg">
+                </div>
+                <div style="padding: 10px; display: flex; flex-direction: column; gap: 6px;">
+                    <h3>Judul Buku</h3>
+                    <p>Rp.80.000</p>
+                </div>
+            </div>
+            <div class="item" style="height: 330px; padding: 6px; background-color: #545454; box-shadow: 4px 4px 8px rgba(0,0,0,.8);">
+                <div style="width: 100%; height: 80%; background-color: yellow;">
+                    <img src="images/buku6.jpeg">
+                </div>
+                <div style="padding: 10px; display: flex; flex-direction: column; gap: 6px;">
+                    <h3>Judul Buku</h3>
+                    <p>Rp.80.000</p>
+                </div>
+            </div>
+            <div class="item" style="height: 330px; padding: 6px; background-color: #545454; box-shadow: 4px 4px 8px rgba(0,0,0,.8);">
+                <div style="width: 100%; height: 80%; background-color: yellow;">
+                    <img src="images/buku7.jpeg">
+                </div>
+                <div style="padding: 10px; display: flex; flex-direction: column; gap: 6px;">
+                    <h3>Judul Buku</h3>
+                    <p>Rp.80.000</p>
+                </div>
+            </div>
+            <div class="item" style="height: 330px; padding: 6px; background-color: #545454; box-shadow: 4px 4px 8px rgba(0,0,0,.8);">
+                <div style="width: 100%; height: 80%; background-color: yellow;">
+                    <img src="images/buku8.jpeg">
+                </div>
+                <div style="padding: 10px; display: flex; flex-direction: column; gap: 6px;">
+                    <h3>Judul Buku</h3>
+                    <p>Rp.80.000</p>
+                </div>
+            </div>
+            <div class="item" style="height: 330px; padding: 6px; background-color: #545454; box-shadow: 4px 4px 8px rgba(0,0,0,.8);">
+                <div style="width: 100%; height: 80%; background-color: yellow;">
+                    <img src="images/buku9.jpg">
+                </div>
+                <div style="padding: 10px; display: flex; flex-direction: column; gap: 6px;">
+                    <h3>Judul Buku</h3>
+                    <p>Rp.80.000</p>
+                </div>
+            </div>
+            <div class="item" style="height: 330px; padding: 6px; background-color: #545454; box-shadow: 4px 4px 8px rgba(0,0,0,.8);">
+                <div style="width: 100%; height: 80%; background-color: yellow;">
+                    <img src="images/buku10.jpg">
+                </div>
+                <div style="padding: 10px; display: flex; flex-direction: column; gap: 6px;">
+                    <h3>Judul Buku</h3>
+                    <p>Rp.80.000</p>
+                </div>
+            </div>
+            <div class="item" style="height: 330px; padding: 6px; background-color: #545454; box-shadow: 4px 4px 8px rgba(0,0,0,.8);">
+                <div style="width: 100%; height: 80%; background-color: yellow;">
+                    <img src="images/buku11.jpg">
+                </div>
+                <div style="padding: 10px; display: flex; flex-direction: column; gap: 6px;">
+                    <h3>Judul Buku</h3>
+                    <p>Rp.80.000</p>
+                </div>
+            </div>
+            <div class="item" style="height: 330px; padding: 6px; background-color: #545454; box-shadow: 4px 4px 8px rgba(0,0,0,.8);">
+                <div style="width: 100%; height: 80%; background-color: yellow;">
+                    <img src="images/buku12.jpg">
+                </div>
+                <div style="padding: 10px; display: flex; flex-direction: column; gap: 6px;">
+                    <h3>Judul Buku</h3>
+                    <p>Rp.80.000</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Best Seller End -->
+
+    <!-- Majalah Koran Start -->
+    <section style="padding: 10px 9rem; background-color: #353535;">
+        <h1 style="font-size: 28px; margin: 14px 0;">Majalah Koran</h1>
+        <div class="majalah" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 8px; flex-wrap: wrap;">
+            <div class="item" style="height: 330px; padding: 6px; background-color: #545454; box-shadow: 4px 4px 8px rgba(0,0,0,.8);">
+                <div style="width: 100%; height: 80%; background-color: yellow;">
+                    <img src="images/buku1.jpeg">
+                </div>
+                <div style="padding: 10px; display: flex; flex-direction: column; gap: 6px;">
+                    <h3>Judul Buku</h3>
+                    <p>Rp.80.000</p>
+                </div>
+            </div>
+            <div class="item" style="height: 330px; padding: 6px; background-color: #545454; box-shadow: 4px 4px 8px rgba(0,0,0,.8);">
+                <div style="width: 100%; height: 80%; background-color: yellow;">
+                    <img src="images/buku2.jpeg">
+                </div>
+                <div style="padding: 10px; display: flex; flex-direction: column; gap: 6px;">
+                    <h3>Judul Buku</h3>
+                    <p>Rp.80.000</p>
+                </div>
+            </div>
+            <div class="item" style="height: 330px; padding: 6px; background-color: #545454; box-shadow: 4px 4px 8px rgba(0,0,0,.8);">
+                <div style="width: 100%; height: 80%; background-color: yellow;">
+                    <img src="images/buku3.jpeg">
+                </div>
+                <div style="padding: 10px; display: flex; flex-direction: column; gap: 6px;">
+                    <h3>Judul Buku</h3>
+                    <p>Rp.80.000</p>
+                </div>
+            </div>
+            <div class="item" style="height: 330px; padding: 6px; background-color: #545454; box-shadow: 4px 4px 8px rgba(0,0,0,.8);">
+                <div style="width: 100%; height: 80%; background-color: yellow;">
+                    <img src="images/buku4.jpeg">
+                </div>
+                <div style="padding: 10px; display: flex; flex-direction: column; gap: 6px;">
+                    <h3>Judul Buku</h3>
+                    <p>Rp.80.000</p>
+                </div>
+            </div>
+            <div class="item" style="height: 330px; padding: 6px; background-color: #545454; box-shadow: 4px 4px 8px rgba(0,0,0,.8);">
+                <div style="width: 100%; height: 80%; background-color: yellow;">
+                    <img src="images/buku5.jpeg">
+                </div>
+                <div style="padding: 10px; display: flex; flex-direction: column; gap: 6px;">
+                    <h3>Judul Buku</h3>
+                    <p>Rp.80.000</p>
+                </div>
+            </div>
+            <div class="item" style="height: 330px; padding: 6px; background-color: #545454; box-shadow: 4px 4px 8px rgba(0,0,0,.8);">
+                <div style="width: 100%; height: 80%; background-color: yellow;">
+                    <img src="images/buku6.jpeg">
+                </div>
+                <div style="padding: 10px; display: flex; flex-direction: column; gap: 6px;">
+                    <h3>Judul Buku</h3>
+                    <p>Rp.80.000</p>
+                </div>
+            </div>
+            <div class="item" style="height: 330px; padding: 6px; background-color: #545454; box-shadow: 4px 4px 8px rgba(0,0,0,.8);">
+                <div style="width: 100%; height: 80%; background-color: yellow;">
+                    <img src="images/buku7.jpeg">
+                </div>
+                <div style="padding: 10px; display: flex; flex-direction: column; gap: 6px;">
+                    <h3>Judul Buku</h3>
+                    <p>Rp.80.000</p>
+                </div>
+            </div>
+            <div class="item" style="height: 330px; padding: 6px; background-color: #545454; box-shadow: 4px 4px 8px rgba(0,0,0,.8);">
+                <div style="width: 100%; height: 80%; background-color: yellow;">
+                    <img src="images/buku8.jpeg">
+                </div>
+                <div style="padding: 10px; display: flex; flex-direction: column; gap: 6px;">
+                    <h3>Judul Buku</h3>
+                    <p>Rp.80.000</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Majalah Koran End -->
+    
+</body>
+</html>
