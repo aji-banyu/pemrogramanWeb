@@ -21,6 +21,7 @@
     }
     
     .logo-wrapper {
+        position: relative;
         background-color: rgb(24, 24, 24);
         display: flex;
         padding: 10px 5rem;
@@ -39,6 +40,10 @@
         object-fit: contain;
     }
     .logo-text {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
         font-size: 32px;
         font-weight: 600;
         color: #fff;
