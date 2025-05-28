@@ -53,7 +53,7 @@
         gap: 20px;
     }
     
-    .reg, .log {
+    .reg a, .log a {
         color: #ffcc00;
         font-size: 20px;
     }
