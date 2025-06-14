@@ -8,20 +8,9 @@ Repositori ini berisi materi praktik untuk mata kuliah atau pelatihan "Pemrogram
 
 ------------------
 
-# 📂 Struktur Folder
-
-├── latihan/
-│ └── ... Kumpulan latihan dasar HTML, CSS, JS
-├── kuis/
-│ └── ... Soal-soal kuis seputar web dasar
-├── tugas/
-│ └── ...  Tugas proyek atau studi kasus
-└── README.md  Dokumentasi repositori
-
-
 ------------------
 
-# 📘 Materi yang Dicakup
+## 📘 Materi yang Dicakup
 
 - Dasar-dasar HTML (struktur, form, table)
 - Penggunaan CSS (selektor, layouting, responsive)
